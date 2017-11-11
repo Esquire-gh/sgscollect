@@ -18,7 +18,7 @@ DJANGO_SECRET_KEY=p94)ya^^knp1hx1jk-)i@rp&1d+b%re4mm^^&nyel!leu*ddu)
 # The initial superuser's username.
 KOBO_SUPERUSER_USERNAME=esquiregh
 # The initial superuser's password.
-KOBO_SUPERUSER_PASSWORD=lawling499
+KOBO_SUPERUSER_PASSWORD=password
 # The e-mail address where your users can contact you.
 KOBO_SUPPORT_EMAIL=ackon.k.richard@gmail.com
 
