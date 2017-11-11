@@ -1,0 +1,42 @@
+{% extends "registration.html" %} {% load staticfiles %} {% block content %}
+<div class="registration__bg">
+
+    <form action="." method="post" class="registration registration--register">
+
+    
+    <h1 style="text-align: center;font-weight: normal; margin-bottom: 5%; font-size: 1.9rem;">Create your SgsCollect Account</h1>
+        <div class="registration__first-half" style="margin-top: 5%;">
+            <div class="registration--logo" style="margin-bottom: 5%;">
+                <a href="/"><img src="{% static 'img/savsign.png' %}" /></a>
+            </div>
+
+            <p style="margin-top: 15%;">
+                <h2 style="text-align: center; font-weight: normal;">Signup, Collect Data, Analyse</h2>
+            </p>
+
+            {% if welcome_message %} {{ welcome_message|safe }} {% else %}
+            <p>SgsCollect is an integrated set of tools for building forms and collecting interview responses.</p>
+            <!--
+            <p>You can download and install KoBoToolbox on <a href="http://support.kobotoolbox.org/customer/portal/articles/1691108-install-kobotoolbox-on-your-own-server">your own server</a> or <a href="http://support.kobotoolbox.org/customer/portal/articles/1691105-using-kobotoolbox-offline">on your own computer</a>.</p>
+            -->
+            {% endif %}
+        </div>
+
+
+        <div class="registration__second-half">
+            {% csrf_token%} {{ form.as_p }}
+            <center><input type="submit" value="Create Account" class="registration__action" style="width:90%;" /></center>
+            <div class="registration__footer">
+                or <a href="{% url 'auth_login' %}" style="color: black;">login</a>
+            </div>
+        </div>
+
+        <div style="clear:both;"></div>
+    </form>
+
+    <div class="registration__credit"><a href="https://flic.kr/p/9v4mC5" title="Muhkjar refugee camp" target="_blank">Photo</a> by UNAMID / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">by-nc-nd</a></div>
+</div>
+
+
+{% endblock %}
+

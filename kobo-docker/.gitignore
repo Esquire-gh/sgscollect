@@ -1,0 +1,7 @@
+.vols/
+log/
+backups/
+secrets/
+build
+docker-compose.yml
+.transifexrc

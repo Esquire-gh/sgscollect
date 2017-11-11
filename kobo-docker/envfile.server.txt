@@ -1,0 +1,37 @@
+#######################
+# Mandatory variables #
+#######################
+
+# The publicly-accessible domain where your KoBo Toolbox instance will be reached (e.g. example.com).
+PUBLIC_DOMAIN_NAME=www.sgscollect.org
+# The publicly-accessible subdomain for the KoBoForm form building and management interface (e.g. koboform).
+KOBOFORM_PUBLIC_SUBDOMAIN=sgsform
+# The publicly-accessible subdomain for the KoBoCAT data collection and project management interface (e.g.kobocat).
+KOBOCAT_PUBLIC_SUBDOMAIN=sgscat
+# The publicly-accessible subdomain for the Enketo Express web forms (e.g. enketo).
+ENKETO_EXPRESS_PUBLIC_SUBDOMAIN=enketo
+# See "api key" here: https://github.com/kobotoolbox/enketo-express/tree/master/config#linked-form-and-data-server.
+ENKETO_API_TOKEN=abc
+# Canonically a 50-character random string. For Django 1.8.13, see https://docs.djangoproject.com/en/1.8/ref/settings/#secret-key and https://github.com/django/django/blob/4022b2c306e88a4ab7f80507e736ce7ac7d01186/django/core/management/commands/startproject.py#L29-L31.
+# To generate a secret key in the same way as `django-admin startproject` you can run:
+# docker-compose run --rm kpi python -c 'from django.utils.crypto import get_random_string; print(get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))'
+DJANGO_SECRET_KEY=p94)ya^^knp1hx1jk-)i@rp&1d+b%re4mm^^&nyel!leu*ddu)
+# The initial superuser's username.
+KOBO_SUPERUSER_USERNAME=esquiregh
+# The initial superuser's password.
+KOBO_SUPERUSER_PASSWORD=password
+# The e-mail address where your users can contact you.
+KOBO_SUPPORT_EMAIL=josephanto11@gmail.com
+
+######################
+# Optional variables #
+######################
+
+# For help customizing backup schedules, use a `cron` schedule generator (e.g.
+#   crontab.guru). To enable a backup, uncomment the relevant schedule.
+# Default KoBoCAT media backup schedule is weekly at 12:00 AM UTC on Sunday.
+#KOBOCAT_MEDIA_BACKUP_SCHEDULE=0 0 * * 0
+# Default MongoDB backup schedule is weekly at 01:00 AM UTC on Sunday.
+#MONGO_BACKUP_SCHEDULE=0 1 * * 0
+# Default Postgres backup schedule is weekly at 02:00 AM UTC on Sunday.
+#POSTGRES_BACKUP_SCHEDULE=0 2 * * 0
