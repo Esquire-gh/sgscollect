@@ -3,7 +3,7 @@
 #######################
 
 # The publicly-accessible domain where your KoBo Toolbox instance will be reached (e.g. example.com).
-PUBLIC_DOMAIN_NAME=www.sgscollect.org
+PUBLIC_DOMAIN_NAME=sgscollect.org
 # The publicly-accessible subdomain for the KoBoForm form building and management interface (e.g. koboform).
 KOBOFORM_PUBLIC_SUBDOMAIN=form
 # The publicly-accessible subdomain for the KoBoCAT data collection and project management interface (e.g.kobocat).
@@ -17,7 +17,7 @@ ENKETO_API_TOKEN=abc
 # docker-compose run --rm kpi python -c 'from django.utils.crypto import get_random_string; print(get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))'
 DJANGO_SECRET_KEY=p94)ya^^knp1hx1jk-)i@rp&1d+b%re4mm^^&nyel!leu*ddu)
 # The initial superuser's username.
-KOBO_SUPERUSER_USERNAME=esquiregh
+KOBO_SUPERUSER_USERNAME=oheneba
 # The initial superuser's password.
 KOBO_SUPERUSER_PASSWORD=password
 # The e-mail address where your users can contact you.
